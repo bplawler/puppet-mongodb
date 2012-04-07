@@ -17,9 +17,9 @@
 class mongodb {
 	include mongodb::params
 	
-	package { "python-software-properties":
-		ensure => installed,
-	}
+	#package { "python-software-properties":
+	#	ensure => installed,
+	#}
 	
 	exec { "10gen-apt-repo":
 		path => "/bin:/usr/bin",
